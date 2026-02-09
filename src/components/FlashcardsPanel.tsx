@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { api } from '../api/client';
-import { FlashcardsResponse, Flashcard } from '../types';
-import { Sparkles, RefreshCw, AlertCircle, ChevronLeft, ChevronRight, Eye, EyeOff, Layers } from 'lucide-react';
+import { FlashcardsResponse } from '../types';
+import { Sparkles, AlertCircle, ChevronLeft, ChevronRight, Eye, EyeOff, Layers } from 'lucide-react';
 
 interface FlashcardsPanelProps {
     fileId: string;
@@ -14,7 +14,7 @@ export const FlashcardsPanel: React.FC<FlashcardsPanelProps> = ({ fileId }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [showAnswer, setShowAnswer] = useState(false);
 
-    const pollInterval = useRef<NodeJS.Timeout | null>(null);
+    const pollInterval = useRef<ReturnType<typeof setInterval> | null>(null);
     const pollCount = useRef(0);
 
     const fetchStatus = async () => {

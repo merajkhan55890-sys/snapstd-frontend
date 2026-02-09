@@ -4,12 +4,12 @@ import { FileItem, SearchResult } from '../types';
 import { FileCard } from '../components/FileCard';
 import { Upload, Sparkles, ChevronRight, User, Bell } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useTheme } from '../context/ThemeContext';
+//import { useTheme } from '../context/ThemeContext';
 
 const Dashboard: React.FC = () => {
     const [recentFiles, setRecentFiles] = useState<(FileItem | SearchResult)[]>([]);
     const [loading, setLoading] = useState(true);
-    const { toggleTheme } = useTheme(); // Just for access if needed
+ //const { toggleTheme } = useTheme(); // Just for access if needed
 
     useEffect(() => {
         const fetchRecent = async () => {

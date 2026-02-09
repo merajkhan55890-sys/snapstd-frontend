@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { api } from '../api/client';
 import { useNavigate } from 'react-router-dom';
-import { Upload as UploadIcon, X, FileText, CheckCircle } from 'lucide-react';
+import { Upload as UploadIcon, X, FileText } from 'lucide-react';
 import { DuplicateDialog } from '../components/DuplicateDialog';
 
 const Upload: React.FC = () => {
