@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Snapstd - Document Summary (Dark Mode)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6366f1", // Indigo accent
+                        "slate-blue": "#1e293b", // Left panel (Dark Slate Blue)
+                        "deep-gray": "#0f1115", // Right summary area (Very dark gray)
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.875rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        :root {
+            --nav-bg: #1e293b;
+            --content-bg: #0f1115;
+            --text-soft-white: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-indigo: #6366f1;
+            --delete-red: #ef4444;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-deep-gray font-display text-slate-100">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 bg-slate-blue border-b border-slate-700/50 backdrop-blur-md">
+<div class="flex items-center justify-between px-4 h-14">
+<button class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-slate-700/50 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+</button>
+<h2 class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400">Snapstd</h2>
+<button class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-slate-700/50 transition-colors">
+<span class="material-symbols-outlined text-2xl">more_horiz</span>
+</button>
+</div>
+</header>
+<section class="bg-slate-blue px-6 pt-8 pb-8 border-b border-slate-700/30">
+<div class="max-w-2xl mx-auto">
+<h1 class="text-3xl font-bold tracking-tight text-white mb-5 leading-tight">Intro to Quantum Mechanics</h1>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-indigo-500/20 text-indigo-300 text-[11px] font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">tag</span> Physics
+                    </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-indigo-500/20 text-indigo-300 text-[11px] font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">tag</span> Midterm24
+                    </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-700/50 text-slate-400 text-[11px] font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> Oct 2023
+                    </span>
+</div>
+</div>
+</section>
+<nav class="sticky top-14 z-40 bg-slate-blue/95 backdrop-blur-md px-6 shadow-xl shadow-black/10">
+<div class="flex max-w-2xl mx-auto border-b border-slate-700/50">
+<a class="relative flex-1 py-4 text-center transition-all" href="#">
+<span class="text-sm font-bold text-indigo-400">Summary</span>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-indigo-500"></div>
+</a>
+<a class="flex-1 py-4 text-center transition-all" href="#">
+<span class="text-sm font-bold text-slate-500 hover:text-slate-300">Flashcards</span>
+</a>
+<a class="flex-1 py-4 text-center transition-all" href="#">
+<span class="text-sm font-bold text-slate-500 hover:text-slate-300">Q&amp;A</span>
+</a>
+</div>
+</nav>
+<main class="flex-1 bg-deep-gray px-6 pt-10 pb-36">
+<div class="max-w-2xl mx-auto space-y-12">
+<section>
+<h3 class="flex items-center gap-3 text-lg font-bold text-indigo-300 mb-6 tracking-wide">
+<span class="material-symbols-outlined text-indigo-500">auto_awesome</span>
+                        KEY CONCEPTS
+                    </h3>
+<div class="space-y-8 text-slate-200 leading-[1.8] text-[17px]">
+<p>
+                            Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It is the foundation of all quantum physics including quantum chemistry, quantum field theory, quantum technology, and quantum information science.
+                        </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="mt-2.5 h-1.5 w-1.5 rounded-full bg-indigo-500 shrink-0"></div>
+<p><strong class="text-white font-semibold">Wave-Particle Duality:</strong> Every particle or quantum entity may be described as either a particle or a wave.</p>
+</div>
+<div class="flex gap-4">
+<div class="mt-2.5 h-1.5 w-1.5 rounded-full bg-indigo-500 shrink-0"></div>
+<p><strong class="text-white font-semibold">Uncertainty Principle:</strong> Formulated by Werner Heisenberg, stating that the position and velocity of an object cannot both be measured exactly, at the same time.</p>
+</div>
+<div class="flex gap-4">
+<div class="mt-2.5 h-1.5 w-1.5 rounded-full bg-indigo-500 shrink-0"></div>
+<p><strong class="text-white font-semibold">Superposition:</strong> A fundamental principle of quantum mechanics that holds that a physical system—such as an electron—exists partly in all its particular theoretically possible states simultaneously.</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h3 class="flex items-center gap-3 text-lg font-bold text-indigo-300 mb-6 tracking-wide">
+<span class="material-symbols-outlined text-indigo-500">menu_book</span>
+                        MAIN ARGUMENTS
+                    </h3>
+<div class="space-y-8 text-slate-200 leading-[1.8] text-[17px]">
+<p>
+                            The document argues that classical mechanics fails to explain phenomena at the microscopic level, such as black-body radiation and the photoelectric effect. This led to the development of a new mathematical framework involving complex numbers and probability amplitudes.
+                        </p>
+<div class="p-6 rounded-2xl bg-indigo-500/10 border-l-4 border-indigo-500 italic text-indigo-100/90 shadow-lg shadow-black/20">
+                            "The transition from classical to quantum theory represents one of the most significant paradigm shifts in the history of science, challenging our basic intuition about reality."
+                        </div>
+<p>
+                            Furthermore, the text explores the role of the observer in collapsing the wave function, a topic that remains central to discussions about the interpretations of quantum mechanics, such as the Copenhagen interpretation vs. Many-Worlds.
+                        </p>
+</div>
+</section>
+<section>
+<h3 class="flex items-center gap-3 text-lg font-bold text-indigo-300 mb-6 tracking-wide">
+<span class="material-symbols-outlined text-indigo-500">checklist</span>
+                        SUMMARY CONCLUSION
+                    </h3>
+<p class="text-slate-200 leading-[1.8] text-[17px]">
+                        In conclusion, while quantum mechanics introduces statistical probabilities into the heart of physical laws, it has proven to be an incredibly robust and accurate theory, enabling technologies like the transistor and the laser. Mastering these basics is essential for the upcoming Midterm '24.
+                    </p>
+</section>
+</div>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 bg-deep-gray/95 backdrop-blur-xl border-t border-slate-800 p-5 z-50">
+<div class="max-w-2xl mx-auto flex gap-4">
+<button class="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-2xl flex items-center justify-center gap-3 active:scale-[0.98] transition-all shadow-xl shadow-indigo-900/20">
+<span class="material-symbols-outlined text-xl">edit_note</span>
+                    Edit Notes
+                </button>
+<button class="w-16 h-16 bg-red-950/30 text-red-500 border border-red-500/30 rounded-2xl flex items-center justify-center active:scale-[0.98] transition-all hover:bg-red-900/40">
+<span class="material-symbols-outlined text-2xl">delete</span>
+</button>
+</div>
+</footer>
+</div>
+
+</body></html>

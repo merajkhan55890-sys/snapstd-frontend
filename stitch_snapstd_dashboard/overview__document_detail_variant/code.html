@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Snapstd - Document Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec13",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #326732;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Main Container (Mobile Form Factor) -->
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- Top App Bar (Sticky) -->
+<div class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-black/5 dark:border-white/5">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-slate-900 dark:text-white flex size-10 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Neural Networks - Lecture 4</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex cursor-pointer items-center justify-center rounded-lg size-10 bg-transparent text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Study Progress Bar -->
+<div class="flex flex-col gap-1 px-4 pb-4">
+<div class="flex justify-between items-center mb-1">
+<p class="text-slate-500 dark:text-[#92c992] text-xs font-medium">Reading Progress</p>
+<p class="text-slate-900 dark:text-white text-xs font-bold">35%</p>
+</div>
+<div class="h-1.5 w-full rounded-full bg-slate-200 dark:bg-[#326732] overflow-hidden">
+<div class="h-full bg-primary" style="width: 35%;"></div>
+</div>
+</div>
+</div>
+<!-- Document Metadata Header -->
+<div class="flex p-6 bg-slate-50 dark:bg-white/5 border-b border-black/5 dark:border-white/5">
+<div class="flex w-full items-start gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl size-24 shrink-0 shadow-lg border-2 border-primary/20" data-alt="Abstract neural network diagram representing lecture 4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYKtzgGP-Y6zYSCEM7u5wc0oG2ihw_Yi7oG4hWRlLI50yw6sHl7aXzPTxpTqISdG0-dJAUJnhg5q0i8AOTBDGd4pa8KvK8iwv4wsBhgNqmBhEbBPHFa499ERLUS-DZPSpb_hl05VahS3Yx5Bew5L2r53BWCFPE7M9cZnNqCSqNnKh5C2lagSKlc3gbhE-D98hkqGwVGPU0n-abWJFbf9FzFn8tjm00dLrYF_fND5gbzZl0xFKVm4TN5TPFazCdIPmdhY8mjSJWFm0");'>
+</div>
+<div class="flex flex-col justify-center h-24">
+<p class="text-slate-900 dark:text-white text-xl font-bold leading-tight">Neural Networks - Lecture 4</p>
+<p class="text-primary font-medium text-sm mt-1">Computer Science 101</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-[14px] text-slate-400">description</span>
+<p class="text-slate-500 dark:text-[#92c992] text-xs font-normal">Added Oct 12 • 12MB PDF</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Segmented Control (Tabs) -->
+<div class="sticky top-[104px] z-40 bg-background-light dark:bg-background-dark">
+<div class="flex border-b border-slate-200 dark:border-[#326732] px-4">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-slate-900 dark:text-white pb-3 pt-4 flex-1 transition-all" href="#">
+<span class="text-sm font-bold tracking-[0.015em]">Summary</span>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-400 dark:text-[#92c992] pb-3 pt-4 flex-1 hover:text-primary transition-all" href="#">
+<span class="text-sm font-bold tracking-[0.015em]">Flashcards</span>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-400 dark:text-[#92c992] pb-3 pt-4 flex-1 hover:text-primary transition-all" href="#">
+<span class="text-sm font-bold tracking-[0.015em]">Q&amp;A</span>
+</a>
+</div>
+</div>
+<!-- Scrollable Content Area: AI Summary -->
+<div class="flex-1 p-6 space-y-8 pb-24">
+<!-- Executive Summary Section -->
+<section class="animate-in fade-in duration-500">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold">Executive Summary</h3>
+</div>
+<div class="bg-primary/5 dark:bg-primary/10 border-l-4 border-primary p-4 rounded-r-lg">
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed italic">
+                        "Lecture 4 covers the fundamental mechanics of Backpropagation and the mathematical intuition behind Gradient Descent. We explore how errors are propagated backwards through multiple layers to update weights and biases."
+                    </p>
+</div>
+</section>
+<!-- Key Concepts Section -->
+<section>
+<h4 class="text-slate-900 dark:text-white text-lg font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400">key</span>
+                    Key Concepts
+                </h4>
+<div class="grid grid-cols-1 gap-3">
+<div class="flex items-start gap-3 p-3 rounded-lg bg-slate-100 dark:bg-white/5 border border-black/5 dark:border-white/5">
+<div class="size-6 rounded bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+<span class="text-primary text-xs font-bold">1</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white font-semibold">Chain Rule</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">The mathematical foundation for calculating derivatives of composite functions in a network.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-slate-100 dark:bg-white/5 border border-black/5 dark:border-white/5">
+<div class="size-6 rounded bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+<span class="text-primary text-xs font-bold">2</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white font-semibold">Learning Rate (η)</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">A hyperparameter that determines the step size during weight updates.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-slate-100 dark:bg-white/5 border border-black/5 dark:border-white/5">
+<div class="size-6 rounded bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+<span class="text-primary text-xs font-bold">3</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white font-semibold">Vanishing Gradients</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">A common issue where gradients become too small to affect the weights in early layers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Breakdown Section -->
+<section>
+<h4 class="text-slate-900 dark:text-white text-lg font-bold mb-4">Detailed Breakdown</h4>
+<div class="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 space-y-4 leading-relaxed text-[16px]">
+<h5 class="text-primary font-bold">1. The Forward Pass</h5>
+<p>
+                        During the forward pass, input data travels through the network layers. Each neuron performs a linear transformation followed by a non-linear activation function. The final layer produces a prediction which is then compared against the actual target using a loss function.
+                    </p>
+<h5 class="text-primary font-bold">2. Error Propagation</h5>
+<p>
+                        Backpropagation begins at the output layer. We calculate the gradient of the loss function with respect to each weight by working backward through the graph. The magnitude of the gradient indicates how much each weight contributed to the total error.
+                    </p>
+<div class="bg-slate-900 dark:bg-black p-4 rounded-xl border border-primary/30 my-6">
+<code class="text-primary text-sm font-mono block leading-relaxed">
+                            w_new = w_old - η * (∂L / ∂w)
+                        </code>
+<p class="text-slate-400 text-[10px] mt-2 uppercase tracking-widest font-bold">The Weight Update Formula</p>
+</div>
+<h5 class="text-primary font-bold">3. Optimization Challenges</h5>
+<p>
+                        The lecture concludes with a discussion on local minima and saddle points. While neural networks are high-dimensional, most optimization algorithms like Adam or SGD with Momentum are designed to navigate these landscapes efficiently.
+                    </p>
+</div>
+</section>
+</div>
+<!-- Floating Action Button: Ask AI -->
+<div class="fixed bottom-8 right-6">
+<button class="flex items-center gap-2 bg-primary text-black px-5 py-3 rounded-full font-bold shadow-2xl hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span>Ask AI</span>
+</button>
+</div>
+<!-- Bottom Navigation Bar (iOS Style) -->
+<div class="fixed bottom-0 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-black/5 dark:border-white/5 pt-2 pb-6 px-8 flex justify-between items-center z-50">
+<div class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">library_books</span>
+<span class="text-[10px] font-medium">Library</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="text-[10px] font-medium">Progress</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</div>
+</div>
+</div>
+</body></html>

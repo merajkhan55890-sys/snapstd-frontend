@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recall Flashcards (Dark Mode) - Snapstd</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b82f6",
+                        "background-dark": "#0a0c10",
+                        "card-dark": "#161b26",
+                        "surface-dark": "#1c2433"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.25rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --ios-bg: #000000;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0c10;
+        }
+        .flashcard-gradient {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="flex items-center bg-background-dark/80 backdrop-blur-lg p-4 border-b border-gray-800/50 justify-between sticky top-0 z-10">
+<div class="flex items-center gap-3">
+<div class="text-white cursor-pointer hover:bg-gray-800 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-white text-sm font-bold leading-tight tracking-tight">Quantum Physics Intro</h1>
+<span class="text-[11px] text-gray-500 font-medium uppercase tracking-widest">Flashcards</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 text-white hover:bg-gray-800 rounded-lg">
+<span class="material-symbols-outlined text-2xl">more_horiz</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col p-6 @container max-w-lg mx-auto w-full">
+<div class="flex flex-col gap-4 mb-8">
+<div class="flex justify-between items-end">
+<div class="flex flex-col gap-1">
+<p class="text-gray-400 text-[11px] font-bold uppercase tracking-wider">Progress</p>
+<p class="text-white text-lg font-bold">3 <span class="text-gray-500 font-medium text-sm">of 15 cards</span></p>
+</div>
+<div class="flex items-center gap-1 bg-blue-500/10 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">bolt</span>
+<span class="text-primary text-[10px] font-bold">STREAK: 5</span>
+</div>
+</div>
+<div class="h-1.5 w-full bg-gray-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500 shadow-[0_0_8px_rgba(59,130,246,0.5)]" style="width: 20%;"></div>
+</div>
+</div>
+<div class="flex-1 flex flex-col justify-center mb-8">
+<div class="flashcard-gradient relative w-full aspect-[3/4] flex flex-col items-center justify-center rounded-2xl shadow-2xl border border-white/5 p-10 text-center transition-transform active:scale-[0.98]">
+<div class="absolute top-6 left-6 flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
+<span class="text-gray-400 text-[10px] font-bold uppercase tracking-widest">Question</span>
+</div>
+<div class="flex flex-col gap-8 items-center">
+<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center border border-white/10">
+<span class="material-symbols-outlined text-blue-400 text-3xl">psychology</span>
+</div>
+<h2 class="text-white text-2xl font-semibold leading-relaxed tracking-tight">
+                        How do neural networks handle backpropagation in deep learning?
+                    </h2>
+</div>
+<button class="mt-12 flex items-center gap-3 px-8 py-4 bg-white text-black rounded-2xl font-bold shadow-xl hover:bg-gray-200 transition-all active:scale-95">
+<span class="material-symbols-outlined text-lg">sync</span>
+<span class="text-sm">Reveal Answer</span>
+</button>
+<p class="absolute bottom-8 text-gray-500 text-[11px] font-medium tracking-wide">
+                    Tap anywhere on the card to flip
+                </p>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex gap-3">
+<button class="flex-1 flex items-center justify-center gap-2 h-16 bg-card-dark border border-gray-800 text-white rounded-2xl font-semibold hover:bg-surface-dark transition-colors active:scale-95">
+<span class="material-symbols-outlined text-xl">chevron_left</span>
+<span>Previous</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 h-16 bg-surface-dark border border-gray-700 text-white rounded-2xl font-semibold hover:bg-gray-800 transition-colors active:scale-95">
+<span>Next Card</span>
+<span class="material-symbols-outlined text-xl">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<button class="flex flex-col items-center justify-center gap-2 py-4 rounded-2xl bg-gray-900/50 border border-white/5 text-gray-400 hover:text-yellow-500 hover:bg-yellow-500/10 transition-all">
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="text-[9px] font-bold tracking-tighter">FAVORITE</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 py-4 rounded-2xl bg-gray-900/50 border border-white/5 text-gray-400 hover:text-red-400 hover:bg-red-400/10 transition-all">
+<span class="material-symbols-outlined text-xl">close</span>
+<span class="text-[9px] font-bold tracking-tighter">FORGOT</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 py-4 rounded-2xl bg-gray-900/50 border border-white/5 text-gray-400 hover:text-emerald-400 hover:bg-emerald-400/10 transition-all">
+<span class="material-symbols-outlined text-xl">check</span>
+<span class="text-[9px] font-bold tracking-tighter">RECALLED</span>
+</button>
+</div>
+</div>
+</main>
+<nav class="border-t border-gray-800 bg-background-dark/90 backdrop-blur-xl pb-8 pt-3 px-8 flex justify-between items-center sticky bottom-0 z-20">
+<button class="flex flex-col items-center gap-1 text-gray-600 transition-colors hover:text-gray-400">
+<span class="material-symbols-outlined text-[26px]">grid_view</span>
+<span class="text-[10px] font-medium">Library</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1">school</span>
+<span class="text-[10px] font-bold">Study</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-600 transition-colors hover:text-gray-400">
+<span class="material-symbols-outlined text-[26px]">analytics</span>
+<span class="text-[10px] font-medium">Stats</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-600 transition-colors hover:text-gray-400">
+<span class="material-symbols-outlined text-[26px]">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</button>
+</nav>
+</div>
+
+</body></html>

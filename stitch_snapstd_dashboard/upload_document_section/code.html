@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Upload Document Section - Snapstd</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col items-center justify-center p-4">
+<!-- Backdrop Mockup for Context -->
+<div class="fixed inset-0 z-0 bg-slate-900/40 backdrop-blur-sm"></div>
+<!-- Main Upload Bottom Sheet / Modal -->
+<div class="relative z-10 w-full max-w-[480px] bg-white dark:bg-slate-900 shadow-2xl rounded-t-3xl overflow-hidden animate-in slide-in-from-bottom duration-500">
+<!-- BottomSheetHandle -->
+<div class="flex flex-col items-stretch">
+<button class="flex h-6 w-full items-center justify-center pt-2">
+<div class="h-1.5 w-12 rounded-full bg-slate-300 dark:bg-slate-700"></div>
+</button>
+<div class="flex items-center justify-between px-6 pt-4 pb-2">
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">Upload Study Material</h2>
+<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">close</span>
+</button>
+</div>
+<div class="flex flex-col p-6 space-y-6">
+<!-- Drop Zone -->
+<div class="flex flex-col items-center gap-4 rounded-xl border-2 border-dashed border-primary/30 dark:border-primary/50 bg-primary/5 dark:bg-primary/10 px-6 py-10 transition-all hover:border-primary/60">
+<div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
+<span class="material-symbols-outlined text-primary text-4xl">cloud_upload</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-center">
+<p class="text-slate-900 dark:text-white text-lg font-semibold">Drag &amp; drop file here</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">PDF, DOCX, TXT (Max 25MB)</p>
+</div>
+<button class="mt-2 flex min-w-[140px] cursor-pointer items-center justify-center gap-2 rounded-lg h-11 px-6 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+<span class="material-symbols-outlined text-[20px]">file_open</span>
+<span>Browse files</span>
+</button>
+</div>
+<!-- Form Fields -->
+<div class="space-y-4">
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">title</span> Document Title
+                        </label>
+<input class="w-full h-12 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 text-slate-900 dark:text-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-slate-400" placeholder="e.g. Bio 101 Lecture Notes" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">school</span> Subject
+                            </label>
+<div class="relative">
+<select class="appearance-none w-full h-12 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 pr-10 text-slate-900 dark:text-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all">
+<option value="">Select...</option>
+<option value="bio">Biology</option>
+<option value="math">Mathematics</option>
+<option value="history">History</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-500">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">label</span> Tags
+                            </label>
+<input class="w-full h-12 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 text-slate-900 dark:text-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-slate-400" placeholder="Exam, Prep..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Processing / Upload Button State -->
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+<!-- Progress Bar (Visible during "Processing" state) -->
+<div class="mb-6 space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-primary font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span>
+                                Processing...
+                            </span>
+<span class="text-slate-500 font-medium">65%</span>
+</div>
+<div class="h-2 w-full rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 65%"></div>
+</div>
+<p class="text-xs text-slate-400 italic">Analyzing document structure and key terms...</p>
+</div>
+<button class="w-full h-14 bg-primary text-white rounded-xl font-bold text-lg shadow-xl shadow-primary/30 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+<span>Upload to Snapstd</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-center text-slate-400 text-xs mt-4">
+                        By uploading, you agree to Snapstd's terms of service.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Safe Area Spacer for iOS -->
+<div class="h-8 bg-white dark:bg-slate-900"></div>
+</div>
+<!-- Hidden Background Image for Visual Enrichment in Preview -->
+<img class="hidden" data-alt="Modern abstract background with blue light patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtX1_X0uAlqDV60o5adrSdGylsPKBgHYtFuYY85zMGQHIHx04BWv5Vilh7lmirMqY4EIML-qyOkS_CgrA-FbwwELIjHYeR7uoP81v9Fg4B5L30FnxWnxQab3dTRXah1eVUUPTcecUEOg62mmozTPzDjXJtDYoN0l7clZjOjBW65vE8mJ9K7KxFuKp6t616DhXMVz3FudhPuTIVZtxpDUsng_JEsTkqByK8A9akvFDRzwAbyArOofgy_LRATsz4tIMYG7tcwBWBamc"/>
+</body></html>
